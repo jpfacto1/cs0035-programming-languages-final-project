@@ -1,0 +1,34 @@
+/* jack_language.txt */
+
+/* JanTayoBibili Shop Billing System */
+
+/* Variable Declarations */
+var laptop_count;
+var tablet_count;
+var phone_count;
+var sub_total;
+var discount_amount;
+var net_total;
+var monthly_payment;
+
+/* Input Quantity from User */
+input laptop_count;
+input tablet_count;
+input phone_count;
+
+/* Sub-total Calculation (Multiplication and Addition) */
+/* Prices: Laptop = 26000, Tablet = 10000, Phone = 7000 */
+sub_total = (laptop_count * 26000) + (tablet_count * 10000) + (phone_count * 7000);
+
+/* Apply Fixed Discount (Subtraction) */
+discount_amount = 1500;
+net_total = sub_total - discount_amount;
+
+/* Calculate 12-Month Installment (Division) */
+monthly_payment = net_total / 12;
+
+/* Display results */
+output sub_total;
+output discount_amount;
+output net_total;
+output monthly_payment;
